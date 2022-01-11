@@ -36,12 +36,22 @@ const sphere = new THREE.Mesh(geometry,material)
 scene.add(sphere)
 
 // Lights
+// 1
 
 const pointLight = new THREE.PointLight(0xffffff, 1)
 pointLight.position.x = 2
 pointLight.position.y = 3
 pointLight.position.z = 4
 scene.add(pointLight)
+
+// 2
+const pointLight2 = new THREE.PointLight(0xff0000, 2)
+// pointLight.position.x = 2
+// pointLight.position.y = 3
+// pointLight.position.z = 4
+pointLight2.position.set(1, 1, 1)
+pointLight2.intensity = 1
+scene.add(pointLight2)
 
 /**
  * Sizes
